@@ -1,0 +1,64 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Vallore",
+    "theme_author": "Vallore",
+    "theme_version": "1.2.0",
+    "theme_documentation_url": "https://shopify.dev/docs/storefronts/themes",
+    "theme_support_url": "https://help.shopify.com"
+  },
+  {
+    "name": "Vallore cart setup",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Each ID must identify an entire bundle variant, not one pouch. Configure matching selling plans and prices before publishing."
+      },
+      {
+        "type": "text",
+        "id": "once_variant_1",
+        "label": "1 pouch: One-time variant ID"
+      },
+      {
+        "type": "text",
+        "id": "sub_variant_1",
+        "label": "1 pouch: Subscription variant ID"
+      },
+      {
+        "type": "text",
+        "id": "sub_plan_1",
+        "label": "1 pouch: Selling plan ID"
+      },
+      {
+        "type": "text",
+        "id": "once_variant_2",
+        "label": "2 pouches: One-time variant ID"
+      },
+      {
+        "type": "text",
+        "id": "sub_variant_2",
+        "label": "2 pouches: Subscription variant ID"
+      },
+      {
+        "type": "text",
+        "id": "sub_plan_2",
+        "label": "2 pouches: Selling plan ID"
+      },
+      {
+        "type": "text",
+        "id": "once_variant_3",
+        "label": "3+1 free: One-time variant ID"
+      },
+      {
+        "type": "text",
+        "id": "sub_variant_3",
+        "label": "3+1 free: Subscription variant ID"
+      },
+      {
+        "type": "text",
+        "id": "sub_plan_3",
+        "label": "3+1 free: Selling plan ID"
+      }
+    ]
+  }
+]

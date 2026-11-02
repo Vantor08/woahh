@@ -1,0 +1,10 @@
+<!doctype html><html lang="{{ request.locale.iso_code }}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{{ page_title | default: shop.name | escape }}</title><link rel="canonical" href="{{ canonical_url }}">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+{{ 'vallore.css' | asset_url | stylesheet_tag }}
+{{ content_for_header }}
+</head><body data-view="{% if request.page_type == 'product' %}product{% else %}home{% endif %}">
+{{ content_for_layout }}
+{% if request.page_type == 'index' or request.page_type == 'product' or template.suffix == 'vallore' %}<script src="{{ 'vallore.js' | asset_url }}" defer></script>{% endif %}
+</body></html>
